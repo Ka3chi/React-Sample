@@ -1,6 +1,6 @@
 
 import { Route, Routes } from "react-router-dom";
-import { Home , About } from "../pages/compiler";
+import { Dashboard , Usermanagement } from "../pages/compiler";
 
 
 
@@ -8,10 +8,10 @@ const AllRoutes = () => {
   return (
     <div>
         <Routes>
-            <Route path="/" element={<Home />}>
+            <Route path="/" element={<Dashboard />}>
                 
             </Route>
-            <Route path="/about" element={<About />}>
+            <Route path="about" element={<Usermanagement />}>
                 
             </Route>
         </Routes>

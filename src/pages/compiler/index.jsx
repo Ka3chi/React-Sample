@@ -1,2 +1,2 @@
-export { Home } from "../partial/Home";
-export { About } from "../partial/About";
+export { Dashboard } from "../partial/Dashboard";
+export { Usermanagement } from "../partial/Usermanagement";

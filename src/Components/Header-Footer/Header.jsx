@@ -1,25 +1,32 @@
 import React from 'react'
-import { AiOutlineMenu } from "react-icons/ai";
-import grab from "../../assets/home/grab.png";
-import { FaChevronDown } from "react-icons/fa";
+import { MdOutlineMenu } from "react-icons/md";
+import logo from "../../assets/home/logo.png"
+import { FaRegUser } from "react-icons/fa";
+import { IoMdSearch } from "react-icons/io";
+
 
 const Header = () => {
   return (
-    <div className='flex items-center'>
-        <div className='p-[20px]'>
-            <AiOutlineMenu className='w-[28px] h-[32px]'/>
-            <span className='text-[11px]'>Menu</span>
+    <div className='flex flex-row justify-center items-center bg-orange-500 p-[10px]'>
+      <div className='flex items-center'>
+        <img src={logo} alt="" className='h-[50px] w-[60px]' />
+        <span className='text-[20px] font-extrabold'>Guardians</span>
+      </div>
+      <div className='w-[60px]'></div>
+      <div className='flex justify-center'>
+        <MdOutlineMenu className='h-[40px] w-[40px]' />
+      </div>
+      <div className='w-[800px]'></div>
+      <div className='flex justify-center items-center'>
+        <input type="text" placeholder='Search' className='h-[30px] rounded-l-[5px] p-[5px]' />
+        <div className='bg-blue-500 rounded-r-[5px]'>
+          <IoMdSearch className='h-[30px] w-[30px]' />
         </div>
-        <div className='p-[20px] '>
-            <img className='w-[91px] h-[35px]'src={grab} alt="" />
-        </div>
-        <div className='flex flex-row'>
-            <span className='pe-2'>Be Our Partner</span>
-            <FaChevronDown className='w-[10px] h-[20px] pt-2' />
-        </div>
-        <div>
-            <span>Help Center</span>
-        </div>
+
+        <div className='w-[60px]'></div>
+        <FaRegUser className='h-[20px] w-[30px]' />
+        <span className='pl-[5px] font-semibold'>Aldrin John Almoradie</span>
+      </div>
     </div>
   )
 }
