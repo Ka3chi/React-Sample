@@ -10,7 +10,7 @@ function App() {
     <div className='flex flex-col min-h-[100vh]'>
       <Header />
       <div className='flex flex-row'>
-      <Sidenav className='position-fix' />
+      <Sidenav className='position-fix mt-[25px]'/>
       <AllRoutes/>
       </div>
       <div className='mt-auto'>

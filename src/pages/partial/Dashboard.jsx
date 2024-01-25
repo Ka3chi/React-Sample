@@ -2,7 +2,7 @@
 
 export const Dashboard = () => {
   return (
-    <div className="ml-[500px] bg-gray-500">
+    <div className=" bg-semi-white h-[100vh] w-[1250px]">
       <p>Dashboard</p>
     </div>
   )
