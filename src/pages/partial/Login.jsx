@@ -6,7 +6,7 @@ import { CiLock } from "react-icons/ci";
 export const Login = () => {
   return (
     <div className="flex justify-center items-center pt-[20px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-100 via-blue-300 to-blue-500 h-screen">
-      <div className="  h-[400px] w-[300px] rounded-l-[30px] flex justify-center items-center bg-blue-500">
+      <div className="  h-[400px] w-[300px] rounded-l-[30px] flex justify-center items-center bg-bluew">
         <span>image</span>
       </div>
       <div className=" bg-lightblue2 h-[400px] w-[300px] rounded-r-[30px] flex justify-center items-center p-10 flex-col ">
