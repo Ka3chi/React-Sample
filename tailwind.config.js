@@ -16,6 +16,9 @@ module.exports = {
       'gray-light': '#d3dce6',
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animated'),
+    require("tailwindcss-animate"),
+  ],
 }
 }

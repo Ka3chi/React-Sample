@@ -2,12 +2,13 @@ import { Link } from "react-router-dom"
 import { FaUserCircle } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { CiLock } from "react-icons/ci";
+import welcome from "../../assets/home/welcome.png"
 
 export const Login = () => {
   return (
-    <div className="flex justify-center items-center pt-[20px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-100 via-blue-300 to-blue-500 h-screen">
+    <div className="flex justify-center items-center pt-[20px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-100 via-blue-300 to-blue-500 h-screen" >
       <div className="  h-[400px] w-[300px] rounded-l-[30px] flex justify-center items-center bg-bluew">
-        <span>image</span>
+        <img src={welcome} alt="" className="h-[300px] w-[350px]"/>
       </div>
       <div className=" bg-lightblue2 h-[400px] w-[300px] rounded-r-[30px] flex justify-center items-center p-10 flex-col ">
         <div className="flex justify-center items-center ">
@@ -23,9 +24,9 @@ export const Login = () => {
           <input type="text" placeholder="       Password" className=" text-[white] bg-transparent border-b-[2px] flex items-center justify-center" />
           </div>
           <div className="flex justify-center items-center mt-[20px]  ">
-            <Link to='/' className="text-[white] justify-center items-center flex bg-red-700 h-[40px] w-[100px] rounded-[10px]">Log In</Link>
+            <Link to='/' className="text-[white] justify-center items-center flex bg-red-700 h-[40px] w-[100px] rounded-[10px] animate-fade-down">Log In</Link>
           </div >
-          <div className="text-white mt-[15px]"><span> Don't have account? <Link to='/Signup'> Sign Up</Link>
+          <div className="text-white mt-[15px]"><span> Don't have account? <Link to='/Sample'> Sign Up</Link>
             </span></div>
 
         </form>

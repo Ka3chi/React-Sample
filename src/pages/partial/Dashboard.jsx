@@ -1,38 +1,57 @@
-import Sidenav from '../../Components/Header-Footer/Sidenav'
 import Header from '../../Components/Header-Footer/Header'
-
+import Footer from '../../Components/Header-Footer/Footer'
 
 export const Dashboard = () => {
   return (
-    <div className='h-screen grid grid-cols-[auto,1fr]'>
-      <Sidenav />
-      <div className="grid grid-rows-[auto,1fr]">
-
-        <Header />
-        <div className=" bg-black w-[1358px] p-6 ">
+      <div className="grid  grid-cols h-[1500px] w-screen overflow-x-hidden">
+        <Header/>
+        {/* Image here */}
+        <div className='home bg-violet-500 h-[800px]' >
+        </div>
+        <div className=" bg-sky-500 h-[773px] p-6 ">
           {/* //grid start here */}
-          <div className="grid grid-cols-3 gap-5 h-[200px] w-[1250px] mx-[20px] mb-[20px]">
+          <div className="grid grid-cols-4 gap-5 h-[600px] w-[1490px] mx-[20px] mb-[20px] p-[20px] mt-[90px]">
             <div className="rounded-[30px] flex flex-col justify-center items-center bg-slate-500 ">
-              <span>Stocks</span>
-              <span>0</span>
+              <span>Best Seller</span>
             </div>
-            <div className="rounded-[30px] flex flex-col justify-center items-center bg-red-500">
-              <span>User</span>
-              <span>0</span>
+            <div className="rounded-[30px] flex flex-col justify-center items-center bg-slate-500 ">
+              <span>Family Meals</span>
             </div>
-            <div className="rounded-[30px] flex  flex-col justify-center items-center bg-green-500 ">
-              <span>Stocks</span>
-              <span>0</span>
+            <div className="rounded-[30px] flex flex-col justify-center items-center bg-slate-500 ">
+              <span>Breakfast</span>
             </div>
-          </div>
-          <div className="flex flex-row gap-[50px] p-[15px] pl-[20px]">
-            <div className="bg-blue-500 h-[410px] w-[700px] rounded-[20px] flex justify-center items-center">graph chart</div>
-            <div className="bg-white h-[410px] w-[500px] rounded-[20px] flex justify-center items-center">
-              <span>pie chart</span>
+            <div className="rounded-[30px] flex flex-col justify-center items-center bg-slate-500 ">
+              <span>Chickenjoy</span>
+            </div>
+            <div className="rounded-[30px] flex flex-col justify-center items-center bg-slate-500 ">
+              <span>Burgers</span>
+            </div>
+            <div className="rounded-[30px] flex flex-col justify-center items-center bg-slate-500 ">
+              <span>Jolly Spaghetti</span>
+            </div>
+            <div className="rounded-[30px] flex flex-col justify-center items-center bg-slate-500 ">
+              <span>Burger steak</span>
+            </div>
+            <div className="rounded-[30px] flex flex-col justify-center items-center bg-slate-500 ">
+              <span>Super Meals</span>
+            </div>
+            <div className="rounded-[30px] flex flex-col justify-center items-center bg-slate-500 ">
+              <span>Chicken Sandwhich</span>
+            </div>
+            <div className="rounded-[30px] flex flex-col justify-center items-center bg-slate-500 ">
+              <span>Spaghetti</span>
+            </div>
+            <div className="rounded-[30px] flex flex-col justify-center items-center bg-slate-500 ">
+              <span>Desserts</span>
+            </div>
+            <div className="rounded-[30px] flex flex-col justify-center items-center bg-slate-500 ">
+              <span>Beverages</span>
             </div>
           </div>
         </div>
+        <div className='grid grid-col '>
+        <Footer/>
+        </div>
       </div>
-    </div>
   )
 }

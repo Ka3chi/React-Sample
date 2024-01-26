@@ -1,6 +1,6 @@
 
 import { Route, Routes } from "react-router-dom";
-import { Dashboard , Usermanagement , Login , Signup } from "../pages/compiler";
+import { Dashboard , Usermanagement , Login , Signup , Sample } from "../pages/compiler";
 
 
 
@@ -10,6 +10,8 @@ const AllRoutes = () => {
     <div>
         <Routes>
             <Route path="/Login" element={<Login />}>
+            </Route>
+            <Route path="/Sample" element={<Sample />}>
             </Route>
             <Route path="/Signup" element={<Signup />}>
             </Route>

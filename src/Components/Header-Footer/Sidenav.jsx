@@ -10,7 +10,7 @@ import logo from "../../assets/home/logo.png"
 const Sidenav = () => {
   return (
     //side nav
-    <div className=' bg-lightblue2 position-fix h-screen w-[242px] '>
+    <div className=' bg-lightblue2 position-fix h-screen w-[242px] hidden'>
       <div className='flex items-center justify-center gap-[15px] ml-[20px] mt-[2px] mr-[40px]'>
         <img src={logo} alt="" className='h-[70px] w-[80px]' />
         <span className='text-[25px] font-extrabold'>Guardians</span>
